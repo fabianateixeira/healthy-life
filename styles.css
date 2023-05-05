@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #969696;
+    --cor-de-fundo: #cae1d3cf;
+    --fonte-principal: 'Poppins', sans-serif;
+    --verde-botao: #2da75c93;
+    --verde-botao2: #1ec45e93;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(img/Nutrição-imagem-principal.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__frase {
+    text-align: center;
+}
+
+.frase {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container__titulo {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 70px;
+    font-weight: 700;
+    width: 588px;
+    padding: 0.2em;
+    background-color: var(--cor-de-fundo);
+    border-radius: 16px;
+}
+
+.descricao__container {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__caixa {
+    margin: 0 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao__titulo {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+    border-radius: 16px;
+}
+
+.secundario__descricao {
+    padding: 2em;
+}
+
+.contato {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 35% 15%;
+}
+
+.contato__titulo {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 0.3em 1em;
+    width: 90%;
+}
+
+.contato__e-mail {
+    padding: 0.5em;
+    border: transparent;
+    border-radius: 20px;
+    width: 90%;
+    height: 18%;
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.contato__texto {
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    margin: 0 0 3em 1em;
+    width: 90%;
+}
+
+.contato__e-mail::placeholder {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza-secundario);
+    padding-left: 1em;
+}
+
+.contato__botao {
+    border-radius: 20px;
+    border: transparent;
+    width: 80%;
+    height: 25%;
+    color: var(--branco-principal);
+    background-color: var(--verde-botao);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.contato__botao:hover {
+    background-color: var(--verde-botao2);
+}
+
+.rodape{
+    text-align: center;
+    margin: 2em;
+}
+
+.rodape__texto{
+    color:var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+@media (max-width: 415px) {
+    .container__titulo {
+        font-size: 40px;
+        width: 70%;
+    }
+
+    .descricao__container {
+        font-size: 20px;
+    }
+    
+    .container__caixa {
+        margin: 0;
+    }
+
+    .principal {
+        background-size: cover;
+    }
+    
+    .frase {
+        font-size: 24px;
+        margin: 2em 0;
+    }
+   
+    .secundario {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    .secundario__imagem {
+        width: 350%;
+    }
+
+    .descricao__titulo {
+        font-size: 30px;
+    }
+
+    .contato {
+        display: inline;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__botao {
+        width: 50%;
+    }
+
+    .contato__e-mail {
+        margin-bottom: 1em;
+    }
+
+    .contato__texto {
+        margin-bottom: 1.5em;
+    }
+
+}
